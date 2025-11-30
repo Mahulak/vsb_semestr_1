@@ -1,0 +1,77 @@
+- vstup ...
+- pocet_radku
+- pole_radku = char * 50*type(char) * pocet_radku
+- 
+- nacteni radku -> radek_pred
+- cyklus max 50 nebo '\n' -> radek
+- radek_po = ''
+/*********/
+   Heleh        xxxXX;
+/*******/
+- init 
+    slovo = ''
+    pocet_slov = 0, 
+    pocet_mezer_pred = 0, 
+    pocet_mezer_po = 0,  
+    lower_case_pred = 0 
+    lower_case_po = 0 
+    upper_case_pred = 0
+    upper_case_po = 0
+
+/*cyklus for pres radek -> nacitam pismena*/
+for (i = 0; i < strlen(radek); i++) {
+    if mezera tak 
+        pocet_mezer_pred++
+        if slovo != '' pak 
+
+            slovo_po = normalizovat(slovo)
+            lower_case_po += spocitej_male(slovo_po)
+            upper_case_po += spocitej_velke(slovo_po)
+
+            if pocet_slov > 0
+                radek_po.append(' ')
+            radek_po.append(slovo_po)
+            pocet_slov++
+            slovo = ''
+            -- slovo_po = ''
+        continue
+    if pismeno tak
+        pokud je to male pismeno lower_case_pred++
+        pokud je to velke pismeno upper_case_pred++
+        slovo.append(radek[i])
+}
+
+if (slovo != '')
+    slovo_po = normalizovat(slovo)
+    if pocet_slov > 0
+        radek_po.append(' ')
+    radek_po.append(slovo_po)
+    pocet_slov++
+    slovo = ''
+
+prevezt_velka_mala(slovo, pocet_pismen)
+    cyklus hledam velke pismeno -> velke_pismeno 
+    velke_pismeno == true
+        to_upper(1.pismeno)
+        to_lower(ostatni pismena)
+
+    velke_pismeno == false
+        to_upper(vsechna pismena)
+
+redukovat_opakovani(slovo, pocet_pismen)
+    char* slovo_po 
+    char pismeno = ''
+    cyklus for pres slovo po pismenu 
+        pokud pole[i] != pismeno
+          pismeno = pole[i]
+          slovo_po.append(pismeno)
+
+normalizovat(char * slovo, pocet_pismen)
+    prevezt_velka_mala(slovo)
+    redukovat_opakovani(slovo)
+
+
+    1.nacist vstup a vypsat vstup
+    2.upravit vstup m/v pismena
+    3.upravit vstup z bodu 2. redukce stejnych pismen
+    4.nacist a vypsat statistiky ke kazdemu radku
