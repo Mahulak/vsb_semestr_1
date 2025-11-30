@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">   
+    <title>Profil</title>
+</head>
+<body>
+
+    <div class="obal-stranky">
+
+        <div class="navigace">
+            <button class="tlacitko-alert" onclick="vyskocAlert()">
+                Pozdravit stránku
+            </button>
+            <a href="index.html">Domů</a>
+            <a href="profil.html">Profil</a>
+            <a href="projekty.html">Projekty</a>
+            <button class="dl-tlacitko" onclick="zmenBarvy()">
+                Dark/Light Mode
+            </button>
+        </div>
+        <div class="uvod">
+            <h1>Životopis</h1>
+        </div>
+        <!--------------------------------------------------------------------------------------------------------------->
+        <div class="obsah">
+            <!-- Použijeme třídu profil-nadpis -->
+            <h2 class="profil-nadpis">Osobní profil</h2>
+            
+            <h3 class="sekce-nadpis">O mně</h3>
+            <p>
+                Jsem student se zájmem o moderní technologie a programování. 
+                Rád se učím nové věci a hledám kreativní řešení problémů.
+            </p>
+            <hr>
+            <h3 class="sekce-nadpis">Vzdělání</h3>
+            <ul class="profil-seznam">
+                <li><strong>2025 - doteď:</strong> Vysoká škola báňská - Technická univerzita Ostrava</li>
+                <li><strong>2021 - 2025:</strong> Střední škola informatiky (Obor IT)</li>
+            </ul>
+
+            <br>
+
+            <h3 class="sekce-nadpis">Dovednosti</h3>
+            <ul class="profil-seznam">
+                <li>Databáze (Mírně pokročilý)</li>
+                <li>HTML & CSS (Mírně pokročilý)</li>
+                <li>JavaScript (Začátečník)</li>
+                <li>Programování (Mírně pokročilý)</li>
+            </ul>
+
+            <hr>
+
+            <h3 class="sekce-nadpis">Kontakt</h3>
+
+            <div class="kontakt-box">
+                <p>
+                    <strong>Email:</strong> lukas.vaculik@vsb.com<br>
+                    <strong>Telefon:</strong> +420 123 456 789
+                </p>
+            </div>
+        </div>
+         <!--------------------------------------------------------------------------------------------------------------->
+        <footer>
+            <p>&copy; 2025 VAC0312</p>
+        </footer>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
